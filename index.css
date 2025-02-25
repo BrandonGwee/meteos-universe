@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    /*No scrollbars*/
+}
+
+#image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    cursor: grab;
+}
+
+#space_bg {
+    width: 7680px;
+    height: 4320px;
+    position: absolute;
+}
