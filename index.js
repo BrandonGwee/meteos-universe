@@ -5,6 +5,8 @@ let isDragging = false;
 let startX, startY;
 
 imgContainer.addEventListener('mousedown', (e) => {
+    e.preventDefault;
+
     isDragging = true;
     startX = e.clientX - spaceBG.offsetLeft;
     startY = e.clientY - spaceBG.offsetTop;
@@ -22,11 +24,11 @@ imgContainer.addEventListener('mousemove', (e) => {
     spaceBG.style.top = `${y}px`;
 });
 
-imgContainer.addEventListener('mouseup', () => {
+document.addEventListener('mouseup', () => {
     isDragging = false;
     imgContainer.style.cursor = 'grab';
 });
 
-imgContainer.addEventListener('mouseleave', () => {
+document.addEventListener('mouseleave', () => {
     isDragging = false;
 });
